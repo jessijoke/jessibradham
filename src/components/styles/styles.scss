@@ -1,0 +1,62 @@
+@font-face {
+   font-family: 't-title';
+   src: url('../../fonts/tuesdaynight-regular-webfont.woff2') format('woff2'),
+        url('../../fonts/tuesdaynight-regular-webfont.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+
+}
+
+body {
+    font: 20px 'opensans-bold', sans-serif;
+}
+
+.navBar {
+    background-color: transparent;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    .innerNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .navElement {
+            box-sizing: border-box;
+            padding: 0px 15px 0px 15px;
+        }
+        a {
+            font: 12px 'opensans-bold', sans-serif, bolder;
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.homeDiv {
+    background-image: url('../../images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .homeTitle {
+        font-family: "t-title";
+        font-size: 70px;
+        letter-spacing: 5px;
+        font-weight: light;
+    }
+    .homeDescription {
+        margin-top: 15px;
+        max-width: 75%;
+    }
+}

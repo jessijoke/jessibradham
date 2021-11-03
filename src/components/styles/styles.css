@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 't-title';
+  src: url("../../fonts/tuesdaynight-regular-webfont.woff2") format("woff2"), url("../../fonts/tuesdaynight-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font: 20px 'opensans-bold', sans-serif;
+}
+
+.navBar {
+  background-color: transparent;
+  width: 100vw;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 64px;
+}
+
+.navBar .innerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navBar .innerNav .navElement {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 15px 0px 15px;
+}
+
+.navBar .innerNav a {
+  font: 12px 'opensans-bold', sans-serif, bolder;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.homeDiv {
+  background-image: url("../../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.homeDiv .homeTitle {
+  font-family: "t-title";
+  font-size: 70px;
+  letter-spacing: 5px;
+  font-weight: light;
+}
+
+.homeDiv .homeDescription {
+  margin-top: 15px;
+  max-width: 75%;
+}
+/*# sourceMappingURL=styles.css.map */
