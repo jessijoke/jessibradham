@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { github } from '@fortawesome/free-brands-svg-icons'
 import './styles/styles.css'
 
 
@@ -17,10 +15,10 @@ class Navigation extends Component {
                     <a href="#"><div className="navElement">Home</div></a>
                     <a href="#"><div className="navElement">Works</div></a>
                     <a href="#"><div className="navElement">About</div></a>
-                    <a href="#"><div className="navElement"><FontAwesomeIcon icon="fa-brands fa-github" />Github</div></a>
-                    <a href="#"><div className="navElement">Youtube</div></a>
-                    <a href="#"><div className="navElement">Twitter</div></a>
-                    <a href="#"><div className="navElement">Blog</div></a>
+                    <a href="#"><div className="navElement"><i class="fab fa-github"></i> Github</div></a>
+                    <a href="#"><div className="navElement"><i class="fab fa-youtube"></i> Youtube</div></a>
+                    <a href="#"><div className="navElement"><i class="fab fa-twitter"></i> Twitter</div></a>
+                    <a href="#"><div className="navElement"><i class="fab fa-medium"></i> Blog</div></a>
                 </div>
             </div>
         )

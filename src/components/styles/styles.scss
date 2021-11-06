@@ -49,14 +49,25 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    .homeTitle {
-        font-family: "t-title";
-        font-size: 70px;
-        letter-spacing: 5px;
-        font-weight: light;
+    .homeInner {
+        background-color: rgba(50, 58, 112, 0.9);
+        mix-blend-mode: hard-light;
+        margin-top: -10px;
+        padding: 20px 0px 50px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .homeTitle {
+            font-family: "t-title";
+            font-size: 70px;
+            letter-spacing: 5px;
+            font-weight: light;
+        }
+        .homeDescription {
+            margin-top: 15px;
+            max-width: 75%;
+        }
     }
-    .homeDescription {
-        margin-top: 15px;
-        max-width: 75%;
-    }
+    
 }
