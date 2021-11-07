@@ -12,7 +12,7 @@ body {
 }
 
 .navBar {
-    background-color: transparent;
+    z-index: 1;
     width: 100vw;
     position: fixed;
     display: flex;
@@ -20,14 +20,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 64px;
+    transition: background-color, .5s ease-in-out;
     .innerNav {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        box-sizing: border-box;
         .navElement {
-            box-sizing: border-box;
             padding: 0px 15px 0px 15px;
+            box-sizing: border-box;
         }
         a {
             font: 12px 'opensans-bold', sans-serif, bolder;
@@ -35,6 +37,13 @@ body {
             color: white;
             text-decoration: none;
             letter-spacing: 2px;
+            padding: 22px 0px 22px 0px;
+            box-sizing: border-box;
+            border-bottom: 5px solid transparent;
+        }
+        a:hover {
+            border-bottom: 5px solid white;
+            box-sizing: border-box;
         }
     }
 }
@@ -54,20 +63,22 @@ body {
     background-size: cover;
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     .homeInner {
-        background-color: rgba(50, 58, 112, 0.9);
-        mix-blend-mode: hard-light;
+        //background-color: rgba(50, 58, 112, 0.9);
+        //mix-blend-mode: hard-light;
+        background-color: #00043280;
         margin-top: -10px;
         padding: 20px 0px 50px 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        box-sizing: border-box;
         .homeTitle {
             font-family: "t-title";
             font-size: 70px;
@@ -77,6 +88,29 @@ body {
         .homeDescription {
             margin-top: 15px;
             max-width: 75%;
+        }
+        .buttons {
+            button {
+                width: 175px;
+                margin: 20px 10px 20px 10px;
+                height: 50px;
+                font: 15px 'opensans-bold', sans-serif, bolder;
+                text-transform: uppercase;
+                color: white;
+                cursor: pointer;
+                transition: background-color, .25s ease-in-out;
+            }
+            button.gitHub {
+                background-color: #34495e;
+                border: none;
+            }
+            button.youTube {
+                background-color: rgb(219, 27, 81);
+                border: none;
+            }
+            button:hover {
+                background-color: #6f00c5;
+            }
         }
     }
     
@@ -89,4 +123,148 @@ body {
     background-position: center;
     mix-blend-mode: hard-light;
     animation: scalein .5s ease-in-out;
+}
+
+.portfolioContainer {
+    background-color: #ebeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    h2 {
+        margin: 20px 0px 20px 0px;
+        font-family: "t-title";
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-weight: light;
+        color: #717171;
+    }
+    .projectIconContainer {
+        //background-color: #000524;
+        .projectIcons {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            .projectIcon {
+                //border-radius: 10px;
+                margin: 10px 10px 10px 10px;
+                overflow: hidden;
+                cursor: pointer;
+                height: 80px;
+                width: 100px;
+                display: block;
+                background-color: white;
+                background-size: cover;
+                transition: all .25s ease;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .projectIconOverlay {
+                    height: 100%;
+                    width: 100%;
+                    background-color: transparent;
+                    color: transparent;
+                    transition: background-color, .25s ease-in-out;
+                }
+                .projectIconOverlay:hover {
+                    //background-color: rgba(219, 27, 81, .4);
+                    border: solid 3px rgb(219, 27, 81);
+                    color: transparent;
+                    padding: 30px;
+                    box-sizing: border-box;
+                }
+            }
+            .cultureFit {
+                background-image: url("../../images/projects/culturefit.png");
+            }
+            .airSpace {
+                background-image: url("../../images/projects/airspace-museum.png");
+            }
+            .pokemon {
+                background-image: url("../../images/projects/pokemon-sim.png");
+            }
+            .mediGrowth {
+                background-image: url("../../images/projects/medigrowth.png");
+            }
+            .wheel {
+                background-image: url("../../images/projects/wheel-of-fortune.png");
+            }
+            .pizza {
+                background-image: url("../../images/projects/pizza-savant.jpg");
+            }
+        }
+    }
+    .projectHighlight {
+        margin: 20px 20px 20px 20px;
+        .projectContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .column1 {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                .videoOrImage {
+                    overflow: hidden;
+                    /* 16:9 aspect ratio */
+                    padding-top: 56.25%;
+                    position: relative;
+                  }
+                  
+                  .videoOrImage iframe {
+                     border: 0;
+                     height: 100%;
+                     left: 0;
+                     position: absolute;
+                     top: 0;
+                     width: 100%;
+                  }
+                  .projectDescription {
+                      h3 {
+                          margin: 10px 0px 10px 0px;
+                      }
+                      p {
+                          margin: 0px;
+                          font-size: 15px;
+                      }
+                  }
+            }
+            .column2 {
+                width: 50%;
+                .buttonContainer {
+                    display: flex;
+                    flex-direction: row;
+                    button {
+                        cursor: pointer;
+                        height: 50px;
+                        border: none;
+                        width: 100%;
+                        color: white;
+                        font: 12px 'opensans-bold', sans-serif, bolder;
+                        text-transform: uppercase;
+                        transition: background-color, .25s ease-in-out;
+                    }
+                    button:hover {
+                        background-color: #6f00c5;
+                    }
+                    .github {
+                        background-color: #34495e;
+                    }
+                    .medium {
+                        background-color: rgb(219, 27, 81);
+                    }
+                }
+                h4 {
+                    font-size: 15px;
+                    margin: 10px 0px 10px 0px;
+                }
+                p {
+                    margin: 0px 10px 10px 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
 }

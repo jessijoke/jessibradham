@@ -10,7 +10,7 @@ body {
 }
 
 .navBar {
-  background-color: transparent;
+  z-index: 1;
   width: 100vw;
   position: fixed;
   display: -webkit-box;
@@ -27,6 +27,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 64px;
+  -webkit-transition: background-color, .5s ease-in-out;
+  transition: background-color, .5s ease-in-out;
 }
 
 .navBar .innerNav {
@@ -43,12 +45,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .navBar .innerNav .navElement {
+  padding: 0px 15px 0px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0px 15px 0px 15px;
 }
 
 .navBar .innerNav a {
@@ -57,6 +61,16 @@ body {
   color: white;
   text-decoration: none;
   letter-spacing: 2px;
+  padding: 22px 0px 22px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 5px solid transparent;
+}
+
+.navBar .innerNav a:hover {
+  border-bottom: 5px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .bubbleContainer {
@@ -76,7 +90,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -91,8 +105,7 @@ body {
 }
 
 .homeDiv .homeInner {
-  background-color: rgba(50, 58, 112, 0.9);
-  mix-blend-mode: hard-light;
+  background-color: #00043280;
   margin-top: -10px;
   padding: 20px 0px 50px 0px;
   display: -webkit-box;
@@ -108,6 +121,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .homeDiv .homeInner .homeTitle {
@@ -122,6 +137,32 @@ body {
   max-width: 75%;
 }
 
+.homeDiv .homeInner .buttons button {
+  width: 175px;
+  margin: 20px 10px 20px 10px;
+  height: 50px;
+  font: 15px 'opensans-bold', sans-serif, bolder;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: background-color, .25s ease-in-out;
+  transition: background-color, .25s ease-in-out;
+}
+
+.homeDiv .homeInner .buttons button.gitHub {
+  background-color: #34495e;
+  border: none;
+}
+
+.homeDiv .homeInner .buttons button.youTube {
+  background-color: #db1b51;
+  border: none;
+}
+
+.homeDiv .homeInner .buttons button:hover {
+  background-color: #6f00c5;
+}
+
 .ball {
   position: absolute;
   background-image: url("../../images/bubble.png");
@@ -130,5 +171,211 @@ body {
   mix-blend-mode: hard-light;
   -webkit-animation: scalein .5s ease-in-out;
           animation: scalein .5s ease-in-out;
+}
+
+.portfolioContainer {
+  background-color: #ebeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.portfolioContainer h2 {
+  margin: 20px 0px 20px 0px;
+  font-family: "t-title";
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: light;
+  color: #717171;
+}
+
+.portfolioContainer .projectIconContainer .projectIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolioContainer .projectIconContainer .projectIcons .projectIcon {
+  margin: 10px 10px 10px 10px;
+  overflow: hidden;
+  cursor: pointer;
+  height: 80px;
+  width: 100px;
+  display: block;
+  background-color: white;
+  background-size: cover;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolioContainer .projectIconContainer .projectIcons .projectIcon .projectIconOverlay {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  color: transparent;
+  -webkit-transition: background-color, .25s ease-in-out;
+  transition: background-color, .25s ease-in-out;
+}
+
+.portfolioContainer .projectIconContainer .projectIcons .projectIcon .projectIconOverlay:hover {
+  border: solid 3px #db1b51;
+  color: transparent;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.portfolioContainer .projectIconContainer .projectIcons .cultureFit {
+  background-image: url("../../images/projects/culturefit.png");
+}
+
+.portfolioContainer .projectIconContainer .projectIcons .airSpace {
+  background-image: url("../../images/projects/airspace-museum.png");
+}
+
+.portfolioContainer .projectIconContainer .projectIcons .pokemon {
+  background-image: url("../../images/projects/pokemon-sim.png");
+}
+
+.portfolioContainer .projectIconContainer .projectIcons .mediGrowth {
+  background-image: url("../../images/projects/medigrowth.png");
+}
+
+.portfolioContainer .projectIconContainer .projectIcons .wheel {
+  background-image: url("../../images/projects/wheel-of-fortune.png");
+}
+
+.portfolioContainer .projectIconContainer .projectIcons .pizza {
+  background-image: url("../../images/projects/pizza-savant.jpg");
+}
+
+.portfolioContainer .projectHighlight {
+  margin: 20px 20px 20px 20px;
+}
+
+.portfolioContainer .projectHighlight .projectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column1 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column1 .videoOrImage {
+  overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column1 .videoOrImage iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column1 .projectDescription h3 {
+  margin: 10px 0px 10px 0px;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column1 .projectDescription p {
+  margin: 0px;
+  font-size: 15px;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column2 {
+  width: 50%;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column2 .buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column2 .buttonContainer button {
+  cursor: pointer;
+  height: 50px;
+  border: none;
+  width: 100%;
+  color: white;
+  font: 12px 'opensans-bold', sans-serif, bolder;
+  text-transform: uppercase;
+  -webkit-transition: background-color, .25s ease-in-out;
+  transition: background-color, .25s ease-in-out;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column2 .buttonContainer button:hover {
+  background-color: #6f00c5;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column2 .buttonContainer .github {
+  background-color: #34495e;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column2 .buttonContainer .medium {
+  background-color: #db1b51;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column2 h4 {
+  font-size: 15px;
+  margin: 10px 0px 10px 0px;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column2 p {
+  margin: 0px 10px 10px 10px;
+  font-size: 15px;
 }
 /*# sourceMappingURL=styles.css.map */
