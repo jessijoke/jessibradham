@@ -7,7 +7,8 @@ class Navigation extends Component {
     constructor() {
         super()
         this.state={
-            backgroundColor: "transparent"
+            backgroundColor: "transparent",
+            navClassName: "innerNav"
         }
     }
     listenScrollEvent = e => {
@@ -17,6 +18,18 @@ class Navigation extends Component {
           this.setState({backgroundColor: 'transparent'})
         }
       }
+
+      flipMenuBar = () => {
+        if (this.state.navClassName === "innerNav") {
+          this.setState({
+            navClassName: "innerNav active"
+          })
+        } else {
+          this.setState({
+            navClassName: "innerNav"
+          })
+        }
+      }
     
       componentDidMount() {
         window.addEventListener('scroll', this.listenScrollEvent)
@@ -24,7 +37,8 @@ class Navigation extends Component {
     render() {
         return(
             <div className="navBar" style={{backgroundColor: this.state.backgroundColor}}>
-                <div className="innerNav">
+                <div className={this.state.navClassName}>
+                    <div onClick={() => this.flipMenuBar()} id="menuBar" className="navElement"><i class="fas fa-bars"></i></div>
                     <a href="#"><div className="navElement">Home</div></a>
                     <a href="#"><div className="navElement">Works</div></a>
                     <a href="#"><div className="navElement">About</div></a>

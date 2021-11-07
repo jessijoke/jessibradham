@@ -55,6 +55,11 @@ body {
           box-sizing: border-box;
 }
 
+.navBar .innerNav #menuBar {
+  color: white;
+  display: none;
+}
+
 .navBar .innerNav a {
   font: 12px 'opensans-bold', sans-serif, bolder;
   text-transform: uppercase;
@@ -322,6 +327,10 @@ body {
   width: 100%;
 }
 
+.portfolioContainer .projectHighlight .projectContainer .column1 .projectDescription {
+  background-color: white;
+}
+
 .portfolioContainer .projectHighlight .projectContainer .column1 .projectDescription h3 {
   margin: 10px 0px 10px 0px;
 }
@@ -329,10 +338,14 @@ body {
 .portfolioContainer .projectHighlight .projectContainer .column1 .projectDescription p {
   margin: 0px;
   font-size: 15px;
+  padding: 0px 20px 20px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .portfolioContainer .projectHighlight .projectContainer .column2 {
   width: 50%;
+  background-color: white;
 }
 
 .portfolioContainer .projectHighlight .projectContainer .column2 .buttonContainer {
@@ -375,7 +388,109 @@ body {
 }
 
 .portfolioContainer .projectHighlight .projectContainer .column2 p {
-  margin: 0px 10px 10px 10px;
+  margin: 0px 50px 10px 50px;
   font-size: 15px;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column2 .screenshots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolioContainer .projectHighlight .projectContainer .column2 .screenshots .screenshot img {
+  cursor: pointer;
+  margin: 5px 5px 5px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+  .navBar {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    padding-top: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .navBar .innerNav {
+    width: 0%;
+    overflow: hidden;
+    -webkit-transition: width, .25s ease;
+    transition: width, .25s ease;
+  }
+  .navBar .innerNav #menuBar {
+    color: white;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: -10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px 35px 10px 10px;
+    font-size: 30px;
+  }
+  .navBar .innerNav a {
+    padding: 20px 20px 20px 0px;
+    font-size: 20px;
+  }
+  .navBar .innerNav.active {
+    width: 100%;
+    background-color: #db1b51;
+    padding: 30px 40px 30px 40px;
+    margin-top: -10px;
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .navBar .innerNav.active #menuBar {
+    color: white;
+    cursor: pointer;
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: -10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 5px 35px 10px 10px;
+    font-size: 30px;
+  }
+  .navBar .innerNav.active a {
+    font: 12px 'opensans-bold', sans-serif, bolder;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    padding: 20px 20px 20px 0px;
+    font-size: 20px;
+  }
+  .portfolioContainer .projectHighlight .projectContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolioContainer .projectHighlight .projectContainer .column1 {
+    width: 100%;
+  }
+  .portfolioContainer .projectHighlight .projectContainer .column2 {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

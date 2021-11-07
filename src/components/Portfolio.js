@@ -1,5 +1,14 @@
 import React, { Component } from 'react'
 import './styles/styles.css'
+import ScreenShot1 from '../images/projects/culturefit/culturefit1.png'
+import ScreenShot2 from '../images/projects/culturefit/culturefit2.png'
+import ScreenShot3 from '../images/projects/culturefit/culturefit3.png'
+import ScreenShot4 from '../images/projects/culturefit/culturefit4.png'
+import ScreenShot5 from '../images/projects/culturefit/culturefit5.png'
+import ScreenShot6 from '../images/projects/culturefit/culturefit6.png'
+import ScreenShot7 from '../images/projects/culturefit/culturefit7.png'
+import ScreenShot8 from '../images/projects/culturefit/culturefit8.png'
+import ScreenShot9 from '../images/projects/culturefit/culturefit9.png'
 
 class Portfolio extends Component {
     constructor(props) {
@@ -20,7 +29,7 @@ class Portfolio extends Component {
                             </div>
                             <div className="projectDescription">
                                 <h3>CultureFit</h3>
-                                <p>I designed and programmed Culturefit over the course of about 2 weeks as my final project for Flatiron School. Culturefit is an application that uses Rails as an API as the backend, and React & Redux for the frontend. The program allows companies to utilize dynamic forms to create screener surveys to look for certain attributes in potential employees. There is also an option to leave messages on a message board that utilizes Redux Thunk to post messages asynchronously. People who sign up as Job Seekers can view and take the available surveys, or post on the message board.</p>
+                                <p>I designed and programmed Culturefit over the course of about 3 weeks as my final project for Flatiron School. Culturefit is an application that uses Rails as an API as the backend, and React & Redux for the frontend. The program allows companies to utilize dynamic forms to create screener surveys to look for certain attributes in potential employees. There is also an option to leave messages on a message board that utilizes Redux Thunk to post messages asynchronously. People who sign up as Job Seekers can view and take the available surveys, or post on the message board.</p>
                             </div>
                         </div>
                         <div className="column2">
@@ -31,9 +40,12 @@ class Portfolio extends Component {
                             </div>
                             <div>
                             <h4>Technology Used:</h4>
-                            <p>React • Redux • Redux Thunk • Ruby • Rails as an API • JWT Tokens</p>
+                            <p>React • Redux • Redux Thunk  • SASS • Ruby • Rails as an API • JWT Tokens • ActiveRecord • Bcrypt • CORS</p>
                             </div>
                             <div className="screenshots">
+                                <div className="screenshot"><img src={ScreenShot1} alt="A screenshot of culturefit" /><img src={ScreenShot2} alt="A screenshot of culturefit" /><img src={ScreenShot3} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={ScreenShot4} alt="A screenshot of culturefit" /><img src={ScreenShot5} alt="A screenshot of culturefit" /><img src={ScreenShot6} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={ScreenShot7} alt="A screenshot of culturefit" /><img src={ScreenShot8} alt="A screenshot of culturefit" /><img src={ScreenShot9} alt="A screenshot of culturefit" /></div>
                             </div>
                         </div>
                     </div>
