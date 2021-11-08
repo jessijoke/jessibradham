@@ -219,7 +219,7 @@ class Portfolio extends Component {
 
     render() {
         return(
-            <div className="portfolioContainer">
+            <div className="portfolioContainer" id="Portfolio">
                 <div className="portfolioInner">
                     <h2>Software Development</h2>
                 </div>
