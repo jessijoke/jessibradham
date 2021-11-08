@@ -9,6 +9,42 @@ import ScreenShot6 from '../images/projects/culturefit/culturefit6.png'
 import ScreenShot7 from '../images/projects/culturefit/culturefit7.png'
 import ScreenShot8 from '../images/projects/culturefit/culturefit8.png'
 import ScreenShot9 from '../images/projects/culturefit/culturefit9.png'
+import Space1 from '../images/projects/space/space1.png'
+import Space2 from '../images/projects/space/space2.png'
+import Space3 from '../images/projects/space/space3.png'
+import Space4 from '../images/projects/space/space4.png'
+import Space5 from '../images/projects/space/space5.png'
+import Space6 from '../images/projects/space/space6.png'
+import Space7 from '../images/projects/space/space7.png'
+import Space8 from '../images/projects/space/space8.png'
+import Space9 from '../images/projects/space/space9.png'
+import Pokemon1 from '../images/projects/pokemon/pokemon1.png'
+import Pokemon2 from '../images/projects/pokemon/pokemon2.png'
+import Pokemon3 from '../images/projects/pokemon/pokemon3.png'
+import Pokemon4 from '../images/projects/pokemon/pokemon4.png'
+import Pokemon5 from '../images/projects/pokemon/pokemon5.png'
+import Pokemon6 from '../images/projects/pokemon/pokemon6.png'
+import Pokemon7 from '../images/projects/pokemon/pokemon7.png'
+import Pokemon8 from '../images/projects/pokemon/pokemon8.png'
+import Pokemon9 from '../images/projects/pokemon/pokemon9.png'
+import Medigrowth1 from '../images/projects/medigrowth/medigrowth1.png'
+import Medigrowth2 from '../images/projects/medigrowth/medigrowth2.png'
+import Medigrowth3 from '../images/projects/medigrowth/medigrowth3.png'
+import Medigrowth4 from '../images/projects/medigrowth/medigrowth4.png'
+import Medigrowth5 from '../images/projects/medigrowth/medigrowth5.png'
+import Medigrowth6 from '../images/projects/medigrowth/medigrowth6.png'
+import Medigrowth7 from '../images/projects/medigrowth/medigrowth7.png'
+import Medigrowth8 from '../images/projects/medigrowth/medigrowth8.png'
+import Medigrowth9 from '../images/projects/medigrowth/medigrowth9.png'
+import Wheel1 from '../images/projects/wheel/wheel1.png'
+import Wheel2 from '../images/projects/wheel/wheel2.png'
+import Wheel3 from '../images/projects/wheel/wheel3.png'
+import Wheel4 from '../images/projects/wheel/wheel4.png'
+import Wheel5 from '../images/projects/wheel/wheel5.png'
+import Wheel6 from '../images/projects/wheel/wheel6.png'
+import Wheel7 from '../images/projects/wheel/wheel7.png'
+
+
 
 class Portfolio extends Component {
     constructor(props) {
@@ -73,9 +109,9 @@ class Portfolio extends Component {
                             <p>Vanilla Javascript • Create.js • SASS • Flexbox • Ruby • Polymorphic Associations • Rails as an API • ActiveRecord • FastJSON Serializer • CORS</p>
                             </div>
                             <div className="screenshots">
-                                <div className="screenshot"><img src={ScreenShot1} alt="A screenshot of culturefit" /><img src={ScreenShot2} alt="A screenshot of culturefit" /><img src={ScreenShot3} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={ScreenShot4} alt="A screenshot of culturefit" /><img src={ScreenShot5} alt="A screenshot of culturefit" /><img src={ScreenShot6} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={ScreenShot7} alt="A screenshot of culturefit" /><img src={ScreenShot8} alt="A screenshot of culturefit" /><img src={ScreenShot9} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Space1} alt="A screenshot of culturefit" /><img src={Space2} alt="A screenshot of culturefit" /><img src={Space3} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Space4} alt="A screenshot of culturefit" /><img src={Space5} alt="A screenshot of culturefit" /><img src={Space6} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Space7} alt="A screenshot of culturefit" /><img src={Space8} alt="A screenshot of culturefit" /><img src={Space9} alt="A screenshot of culturefit" /></div>
                             </div>
                         </div>
                     </div>
@@ -103,9 +139,9 @@ class Portfolio extends Component {
                             <p>Vanilla Javascript • Create.js • SASS • Flexbox • Ruby • Ruby on Rails • ActiveRecord • BCrypt • OmniAuth • httparty • Pokeapi </p>
                             </div>
                             <div className="screenshots">
-                                <div className="screenshot"><img src={ScreenShot1} alt="A screenshot of culturefit" /><img src={ScreenShot2} alt="A screenshot of culturefit" /><img src={ScreenShot3} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={ScreenShot4} alt="A screenshot of culturefit" /><img src={ScreenShot5} alt="A screenshot of culturefit" /><img src={ScreenShot6} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={ScreenShot7} alt="A screenshot of culturefit" /><img src={ScreenShot8} alt="A screenshot of culturefit" /><img src={ScreenShot9} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Pokemon1} alt="A screenshot of culturefit" /><img src={Pokemon2} alt="A screenshot of culturefit" /><img src={Pokemon3} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Pokemon4} alt="A screenshot of culturefit" /><img src={Pokemon5} alt="A screenshot of culturefit" /><img src={Pokemon6} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Pokemon7} alt="A screenshot of culturefit" /><img src={Pokemon8} alt="A screenshot of culturefit" /><img src={Pokemon9} alt="A screenshot of culturefit" /></div>
                             </div>
                         </div>
                     </div>
@@ -133,9 +169,9 @@ class Portfolio extends Component {
                             <p>Vanilla Javascript • Chart.js • Chartkick • CSS • Flexbox • Sinatra • Activerecord • Sinatra-Flash • Bcrypt • Rake • Groupdate </p>
                             </div>
                             <div className="screenshots">
-                                <div className="screenshot"><img src={ScreenShot1} alt="A screenshot of culturefit" /><img src={ScreenShot2} alt="A screenshot of culturefit" /><img src={ScreenShot3} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={ScreenShot4} alt="A screenshot of culturefit" /><img src={ScreenShot5} alt="A screenshot of culturefit" /><img src={ScreenShot6} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={ScreenShot7} alt="A screenshot of culturefit" /><img src={ScreenShot8} alt="A screenshot of culturefit" /><img src={ScreenShot9} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Medigrowth1} alt="A screenshot of culturefit" /><img src={Medigrowth2} alt="A screenshot of culturefit" /><img src={Medigrowth3} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Medigrowth4} alt="A screenshot of culturefit" /><img src={Medigrowth5} alt="A screenshot of culturefit" /><img src={Medigrowth6} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Medigrowth7} alt="A screenshot of culturefit" /><img src={Medigrowth8} alt="A screenshot of culturefit" /><img src={Medigrowth9} alt="A screenshot of culturefit" /></div>
                             </div>
                         </div>
                     </div>
@@ -162,9 +198,9 @@ class Portfolio extends Component {
                             <p>Ruby • Catpix • Tty-toolkit • Colorize • Rmagick • Imagemagick • Regex</p>
                             </div>
                             <div className="screenshots">
-                                <div className="screenshot"><img src={ScreenShot1} alt="A screenshot of culturefit" /><img src={ScreenShot2} alt="A screenshot of culturefit" /><img src={ScreenShot3} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={ScreenShot4} alt="A screenshot of culturefit" /><img src={ScreenShot5} alt="A screenshot of culturefit" /><img src={ScreenShot6} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={ScreenShot7} alt="A screenshot of culturefit" /><img src={ScreenShot8} alt="A screenshot of culturefit" /><img src={ScreenShot9} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Wheel1} alt="A screenshot of culturefit" /><img src={Wheel2} alt="A screenshot of culturefit" /><img src={Wheel3} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Wheel4} alt="A screenshot of culturefit" /><img src={Wheel5} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Wheel6} alt="A screenshot of culturefit" /><img src={Wheel7} alt="A screenshot of culturefit" /></div>
                             </div>
                         </div>
                     </div>
