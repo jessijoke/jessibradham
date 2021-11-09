@@ -2,9 +2,6 @@ import './styles/styles.css'
 
 import React, { Component } from 'react'
 
-import Bubble from './Bubble'
-import Bubble2 from './Bubble2'
-
 
 class Home extends Component {
     constructor() {
