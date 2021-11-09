@@ -43,14 +43,16 @@ import Wheel4 from '../images/projects/wheel/wheel4.png'
 import Wheel5 from '../images/projects/wheel/wheel5.png'
 import Wheel6 from '../images/projects/wheel/wheel6.png'
 import Wheel7 from '../images/projects/wheel/wheel7.png'
-
+import Screenshot from './Screenshot'
 
 
 class Portfolio extends Component {
     constructor(props) {
         super()
         this.state={
-            activeProject: "cultureFit"
+            activeProject: "cultureFit",
+            activeScreenshot: "",
+            showScreenshot: false
         }
     }
 
@@ -61,7 +63,7 @@ class Portfolio extends Component {
                     <div className="projectContainer" id="Portfolio">
                         <div className="column1">
                             <div className="videoOrImage">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/oPuyAU9sP6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/oPuyAU9sP6Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
                             <div className="projectDescription">
                                 <h3>CultureFit</h3>
@@ -79,9 +81,9 @@ class Portfolio extends Component {
                             <p>React • Redux • Redux Thunk  • SASS • Ruby • Rails as an API • JWT Tokens • ActiveRecord • Bcrypt • CORS</p>
                             </div>
                             <div className="screenshots">
-                                <div className="screenshot"><img src={ScreenShot1} alt="A screenshot of culturefit" /><img src={ScreenShot2} alt="A screenshot of culturefit" /><img src={ScreenShot3} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={ScreenShot4} alt="A screenshot of culturefit" /><img src={ScreenShot5} alt="A screenshot of culturefit" /><img src={ScreenShot6} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={ScreenShot7} alt="A screenshot of culturefit" /><img src={ScreenShot8} alt="A screenshot of culturefit" /><img src={ScreenShot9} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={ScreenShot1} onClick={() => this.showScreenshot(ScreenShot1)} alt="A screenshot of culturefit" /><img src={ScreenShot2} onClick={() => this.showScreenshot(ScreenShot2)} alt="A screenshot of culturefit" /><img src={ScreenShot3} onClick={() => this.showScreenshot(ScreenShot3)} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={ScreenShot4} onClick={() => this.showScreenshot(ScreenShot4)} alt="A screenshot of culturefit" /><img src={ScreenShot5} onClick={() => this.showScreenshot(ScreenShot5)} alt="A screenshot of culturefit" /><img src={ScreenShot6} onClick={() => this.showScreenshot(ScreenShot6)} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={ScreenShot7} onClick={() => this.showScreenshot(ScreenShot7)} alt="A screenshot of culturefit" /><img src={ScreenShot8} onClick={() => this.showScreenshot(ScreenShot8)} alt="A screenshot of culturefit" /><img src={ScreenShot9} onClick={() => this.showScreenshot(ScreenShot9)} alt="A screenshot of culturefit" /></div>
                             </div>
                         </div>
                     </div>
@@ -109,9 +111,9 @@ class Portfolio extends Component {
                             <p>Vanilla Javascript • Create.js • SASS • Flexbox • Ruby • Polymorphic Associations • Rails as an API • ActiveRecord • FastJSON Serializer • CORS</p>
                             </div>
                             <div className="screenshots">
-                                <div className="screenshot"><img src={Space1} alt="A screenshot of culturefit" /><img src={Space2} alt="A screenshot of culturefit" /><img src={Space3} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={Space4} alt="A screenshot of culturefit" /><img src={Space5} alt="A screenshot of culturefit" /><img src={Space6} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={Space7} alt="A screenshot of culturefit" /><img src={Space8} alt="A screenshot of culturefit" /><img src={Space9} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Space1} onClick={() => this.showScreenshot(Space1)} alt="A screenshot of culturefit" /><img src={Space2} onClick={() => this.showScreenshot(Space2)} alt="A screenshot of culturefit" /><img src={Space3} onClick={() => this.showScreenshot(Space3)} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Space4} onClick={() => this.showScreenshot(Space4)} alt="A screenshot of culturefit" /><img src={Space5} onClick={() => this.showScreenshot(Space5)} alt="A screenshot of culturefit" /><img src={Space6} onClick={() => this.showScreenshot(Space6)} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Space7} onClick={() => this.showScreenshot(Space7)} alt="A screenshot of culturefit" /><img src={Space8} onClick={() => this.showScreenshot(Space8)} alt="A screenshot of culturefit" /><img src={Space9} onClick={() => this.showScreenshot(Space9)} alt="A screenshot of culturefit" /></div>
                             </div>
                         </div>
                     </div>
@@ -139,9 +141,9 @@ class Portfolio extends Component {
                             <p>Vanilla Javascript • Create.js • SASS • Flexbox • Ruby • Ruby on Rails • ActiveRecord • BCrypt • OmniAuth • httparty • Pokeapi </p>
                             </div>
                             <div className="screenshots">
-                                <div className="screenshot"><img src={Pokemon1} alt="A screenshot of culturefit" /><img src={Pokemon2} alt="A screenshot of culturefit" /><img src={Pokemon3} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={Pokemon4} alt="A screenshot of culturefit" /><img src={Pokemon5} alt="A screenshot of culturefit" /><img src={Pokemon6} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={Pokemon7} alt="A screenshot of culturefit" /><img src={Pokemon8} alt="A screenshot of culturefit" /><img src={Pokemon9} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Pokemon1} onClick={() => this.showScreenshot(Pokemon1)} alt="A screenshot of culturefit" /><img src={Pokemon2} onClick={() => this.showScreenshot(Pokemon2)} alt="A screenshot of culturefit" /><img src={Pokemon3} onClick={() => this.showScreenshot(Pokemon3)} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Pokemon4} onClick={() => this.showScreenshot(Pokemon4)} alt="A screenshot of culturefit" /><img src={Pokemon5} onClick={() => this.showScreenshot(Pokemon5)} alt="A screenshot of culturefit" /><img src={Pokemon6} onClick={() => this.showScreenshot(Pokemon6)} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Pokemon7} onClick={() => this.showScreenshot(Pokemon7)} alt="A screenshot of culturefit" /><img src={Pokemon8} onClick={() => this.showScreenshot(Pokemon8)} alt="A screenshot of culturefit" /><img src={Pokemon9} onClick={() => this.showScreenshot(Pokemon9)} alt="A screenshot of culturefit" /></div>
                             </div>
                         </div>
                     </div>
@@ -169,9 +171,9 @@ class Portfolio extends Component {
                             <p>Vanilla Javascript • Chart.js • Chartkick • CSS • Flexbox • Sinatra • Activerecord • Sinatra-Flash • Bcrypt • Rake • Groupdate </p>
                             </div>
                             <div className="screenshots">
-                                <div className="screenshot"><img src={Medigrowth1} alt="A screenshot of culturefit" /><img src={Medigrowth2} alt="A screenshot of culturefit" /><img src={Medigrowth3} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={Medigrowth4} alt="A screenshot of culturefit" /><img src={Medigrowth5} alt="A screenshot of culturefit" /><img src={Medigrowth6} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={Medigrowth7} alt="A screenshot of culturefit" /><img src={Medigrowth8} alt="A screenshot of culturefit" /><img src={Medigrowth9} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Medigrowth1} onClick={() => this.showScreenshot(Medigrowth1)} alt="A screenshot of culturefit" /><img src={Medigrowth2} onClick={() => this.showScreenshot(Medigrowth2)} alt="A screenshot of culturefit" /><img src={Medigrowth3} onClick={() => this.showScreenshot(Medigrowth3)} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Medigrowth4} onClick={() => this.showScreenshot(Medigrowth4)} alt="A screenshot of culturefit" /><img src={Medigrowth5} onClick={() => this.showScreenshot(Medigrowth5)} alt="A screenshot of culturefit" /><img src={Medigrowth6} onClick={() => this.showScreenshot(Medigrowth6)} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Medigrowth7} onClick={() => this.showScreenshot(Medigrowth7)} alt="A screenshot of culturefit" /><img src={Medigrowth8} onClick={() => this.showScreenshot(Medigrowth8)} alt="A screenshot of culturefit" /><img src={Medigrowth9} onClick={() => this.showScreenshot(Medigrowth9)} alt="A screenshot of culturefit" /></div>
                             </div>
                         </div>
                     </div>
@@ -198,9 +200,9 @@ class Portfolio extends Component {
                             <p>Ruby • Catpix • Tty-toolkit • Colorize • Rmagick • Imagemagick • Regex</p>
                             </div>
                             <div className="screenshots">
-                                <div className="screenshot"><img src={Wheel1} alt="A screenshot of culturefit" /><img src={Wheel2} alt="A screenshot of culturefit" /><img src={Wheel3} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={Wheel4} alt="A screenshot of culturefit" /><img src={Wheel5} alt="A screenshot of culturefit" /></div>
-                                <div className="screenshot"><img src={Wheel6} alt="A screenshot of culturefit" /><img src={Wheel7} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Wheel1} onClick={() => this.showScreenshot(Wheel1)} alt="A screenshot of culturefit" /><img src={Wheel2} onClick={() => this.showScreenshot(Wheel2)} alt="A screenshot of culturefit" /><img src={Wheel3} onClick={() => this.showScreenshot(Wheel3)} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Wheel4} onClick={() => this.showScreenshot(Wheel4)} alt="A screenshot of culturefit" /><img src={Wheel5} onClick={() => this.showScreenshot(Wheel5)} alt="A screenshot of culturefit" /></div>
+                                <div className="screenshot"><img src={Wheel6} onClick={() => this.showScreenshot(Wheel6)} alt="A screenshot of culturefit" /><img src={Wheel7} onClick={() => this.showScreenshot(Wheel7)} alt="A screenshot of culturefit" /></div>
                             </div>
                         </div>
                     </div>
@@ -217,9 +219,28 @@ class Portfolio extends Component {
         })
     }
 
+    showScreenshot = (currentScreenshot) => {
+        this.setState({
+            activeScreenshot: currentScreenshot,
+            showScreenshot: true
+        })
+        //console.log(this.state)
+    }
+
+    closeScreenshot = () => {
+        this.setState({
+            showScreenshot: false
+        })
+    }
+
     render() {
         return(
             <div className="portfolioContainer" id="Portfolio">
+            {   this.state.showScreenshot ? 
+                <Screenshot currentScreenshot={this.state.activeScreenshot} closeWindow={this.closeScreenshot}/>
+                :
+                null
+            }
                 <div className="portfolioInner">
                     <h2>Software Development</h2>
                 </div>

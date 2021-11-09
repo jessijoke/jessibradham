@@ -38,7 +38,7 @@ class Navigation extends Component {
         return(
             <div className="navBar" style={{backgroundColor: this.state.backgroundColor}}>
                 <div className={this.state.navClassName}>
-                    <div onClick={() => this.flipMenuBar()} id="menuBar" className="navElement"><i class="fas fa-bars"></i></div>
+                    <div onClick={() => this.flipMenuBar()} id="menuBar" className="navElement"><i className="fas fa-bars"></i></div>
                     <a href="#Home"><div className="navElement">Home</div></a>
                     <a href="#Portfolio"><div className="navElement">Works</div></a>
                     <a href="#"><div className="navElement">About</div></a>
