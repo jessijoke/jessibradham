@@ -102,7 +102,6 @@ class Portfolio extends Component {
                         </div>
                         <div className="column2">
                             <div className="buttonContainer">
-                                <button className="medium" onClick={()=> window.open("https://jessijoke.github.io/space/", "_blank")}><i className="fa fa-globe"></i> Website</button>
                                 <button className="github" onClick={()=> window.open("https://github.com/jessijoke/space", "_blank")}><i className="fab fa-github"></i> Github</button>
                                 <button className="medium" onClick={()=> window.open("https://jessijokes.medium.com/parallax-animations-solar-system-puzzles-and-polymorphic-associations-ba0e96c201d5", "_blank")}><i className="fab fa-medium"></i> Blog</button>
                             </div>
@@ -132,7 +131,6 @@ class Portfolio extends Component {
                         </div>
                         <div className="column2">
                             <div className="buttonContainer">
-                            <button className="medium" onClick={()=> window.open("https://pokemonsimulator.herokuapp.com/", "_blank")}><i className="fa fa-globe"></i> Website</button>
                             <button className="github" onClick={()=> window.open("https://github.com/jessijoke/pokemonsimulator", "_blank")}><i className="fab fa-github"></i> Github</button>
                             <button className="medium" onClick={()=> window.open("https://jessijokes.medium.com/biting-off-more-than-i-can-chew-a-lifestyle-ad966a9aa408", "_blank")}><i className="fab fa-medium"></i> Blog</button>
                             </div>
@@ -162,7 +160,6 @@ class Portfolio extends Component {
                         </div>
                         <div className="column2">
                             <div className="buttonContainer">
-                            <button className="medium" onClick={()=> window.open("https://medigrowth.herokuapp.com/", "_blank")}><i className="fa fa-globe"></i> Website</button>
                             <button className="github" onClick={()=> window.open("https://github.com/jessijoke/medigrowth", "_blank")}><i className="fab fa-github"></i> Github</button>
                             <button className="medium" onClick={()=> window.open("https://jessijokes.medium.com/improving-health-with-a-simple-crud-app-c97a3e9bc98", "_blank")}><i className="fab fa-medium"></i> Blog</button>
                             </div>
